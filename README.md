@@ -55,7 +55,7 @@ Commands as follows ,
  ```
 3.  Use URL :
 ```
- https://demo-ae2-project.herokuapp.com
+
 
  ```
 #### Prerequisites
