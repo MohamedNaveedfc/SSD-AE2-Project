@@ -29,3 +29,4 @@ public class Booking {
     @Column
     private String numberofdays;
 }
+..
