@@ -15,10 +15,10 @@ public class BookingServiceTests {
     @BeforeAll
     void setup() {
         Booking booking = new Booking();
-        booking.setEmployeename("umar");
+        booking.setEmployeename("naveed");
         booking.setCustomerid("1");
         booking.setPackageid("1");
-        booking.setBookedon("10/06/22");
+        booking.setBookedon("25/11/22");
         booking.setNumberofdays("2");
         bookingService.saveBooking(booking);
     }
@@ -29,7 +29,7 @@ public class BookingServiceTests {
     @Test
     void testFindById() {
         Booking booking = bookingService.findById(1).orElseThrow(EntityNotFoundException::new);
-        Assertions.assertEquals("umar", booking.getEmployeename());
+        Assertions.assertEquals("naveed", booking.getEmployeename());
     }
     @Test
     void testUpdateBooking() {
