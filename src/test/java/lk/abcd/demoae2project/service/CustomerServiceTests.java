@@ -9,18 +9,18 @@ import javax.persistence.EntityNotFoundException;
 
 @SpringBootTest
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
-public class CustomerServiceTests {
+public class    CustomerServiceTests {
     @Autowired
     private CustomerService customerService;
     @BeforeAll
     void setup(){
         Customer customer = new Customer();
-        customer.setFirstname("Muhammad");
-        customer.setLastname("umar");
-        customer.setMobile(Integer.valueOf("0770052313"));
-        customer.setEmail("umar@gmail.com");
-        customer.setPassword("UmarUmar");
-        customer.setAddress("kurunegala");
+        customer.setFirstname("Mohamed");
+        customer.setLastname("naveed");
+        customer.setMobile(Integer.valueOf("0772434234"));
+        customer.setEmail("mohamednaveedmass@gmail.com");
+        customer.setPassword("naveed123");
+        customer.setAddress("Mawanella");
         customer.setCountry("Sri lanka");
         customerService.saveCustomer(customer);
     }
@@ -31,14 +31,14 @@ public class CustomerServiceTests {
     @Test
     void testFindById() {
         Customer customer = customerService.findById(1).orElseThrow(EntityNotFoundException::new);
-        Assertions.assertEquals("Muhammad", customer.getFirstname());
+        Assertions.assertEquals("Mohamed", customer.getFirstname());
     }
     @Test
     void testUpdateCustomer() {
         Customer customer = customerService.findById(1).orElseThrow(EntityNotFoundException::new);
-        customer.setEmail("umar@gmail.com");
+        customer.setEmail("mohamednaveedmass@gmail.com");
         Customer updateCustomer = customerService.updatecustomer(1, customer);
-        Assertions.assertEquals("umar@gmail.com", updateCustomer.getEmail());
+        Assertions.assertEquals("mohamednaveedmass@gmail.com", updateCustomer.getEmail());
     }
     @AfterAll
     void tearDown() {
