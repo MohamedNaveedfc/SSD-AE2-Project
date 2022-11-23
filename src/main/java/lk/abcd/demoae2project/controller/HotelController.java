@@ -47,3 +47,4 @@ public class HotelController {
         return "redirect:/read-hotel";
     }
 }
+.
