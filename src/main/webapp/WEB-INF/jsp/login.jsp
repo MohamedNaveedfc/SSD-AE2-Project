@@ -14,7 +14,7 @@
                     <td><form:input class="form-control" path="email"/></td>
                 </tr>
                 <tr class="row">
-                    <td>Country: </td>
+                    <td>Password: </td>
                     <td><form:input class="form-control" path="password"/></td>
                 </tr>
                 <tr class="row">
