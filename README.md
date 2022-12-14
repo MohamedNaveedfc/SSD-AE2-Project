@@ -12,6 +12,7 @@ It is the system you use to do all the tourism packages and tourism plans manage
 * PHP
 * Intellij IDE
 * H2 Database
+* Railway.app
 
  ### Included Dependencies in the Pom.xml 
 
@@ -55,7 +56,7 @@ Commands as follows ,
  ```
 3.  Use URL :
 ```
-https://ssd-ae2-project.herokuapp.com/
+https://ssd-ae2-project-production.up.railway.app/
 
  ```
 #### Prerequisites
