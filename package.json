@@ -19,7 +19,4 @@
     "url": "https://github.com/MohamedNaveedfc/SSD-AE2-Project/issues"
   },
   "homepage": "https://github.com/MohamedNaveedfc/SSD-AE2-Project#readme",
-  "dependencies": {
-    "express": "^4.17.1"
-  }
 }
